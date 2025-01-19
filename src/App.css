@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+#App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+  /* Ensures the page takes at least the full height of the viewport */
+}
+
+#App > main {
+  flex: 1;
+  /* Makes the main content grow to take available space */
+}
+
+@media screen and (max-width: 1060px) {}
+
+@media screen and (max-width: 600px) {}
