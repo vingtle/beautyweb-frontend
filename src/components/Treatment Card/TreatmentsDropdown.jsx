@@ -12,20 +12,36 @@ function TreatmentsDropdown() {
     {
       id: 1,
       name: "Advanced Skin Care",
-      path: "treatments/advanced-skin-care",
+      path: "/booking/advanced-skin-care",
     },
-    { id: 2, name: "Hair & Scalp Care", path: "treatments/hair-scalp-care" },
-    { id: 3, name: "Waxing", path: "treatments/waxing" },
-    { id: 4, name: "Massages", path: "/treatments/massages" },
+    { id: 2, 
+      name: "Hair & Scalp Care", 
+      path: "/booking/hair-scalp-care" 
+    },
+    { id: 3, 
+      name: "Waxing", 
+      path: "/booking/waxing",
+      subcategories: [
+        { id: 1, name: "Face Wax Options", path: "/booking/facewax", description: "EyeBrows; ForeHead; UpperLip; Chin", price: "from 10€" },
+        { id: 2, name: "Arm Wax Options", path: "/booking/armwax", description: "Half Arm; Full Arm", price: "from 15€" },
+        { id: 3, name: "Leg Wax Options", path: "/booking/legxaw", description: "Half Legs; Thighs; Tree/Four Legs; Full Legs", price: "from 20€" },
+        { id: 4, name: "Upper Body Wax Options", path: "/booking/upperbodywax", description: "Underarms; Stomach; Back", price: "from 15€" },
+        { id: 5, name: "Bikini Wax Options", path: "/booking/bikiniwax", description: "Classic; Extended; Full", price: "from 15€" },
+        { id: 6, name: "Ladies Wax Packages", path: "/booking/ladiespackages", description: "Combo: Half Legs + Underarms + Extended Bikini; Combo: Half Legs + Underarms + Full Bikini; Combo: Full Legs + Underarms + Full Bikini; Full Body", price: "from 50€" },
+      ] 
+    },
+    { id: 4, 
+      name: "Massages", 
+      path: "/booking/massages"},
     {
       id: 5,
       name: "Manicures & Pedicures",
-      path: "/treatments/manicures-pedicures",
+      path: "/booking/manicures-pedicures",
     },
     {
       id: 6,
       name: "Eyelash Extensions & Lifts",
-      path: "/treatments/eyelash-extensions",
+      path: "/booking/eyelash-extensions",
     },
   ];
 
@@ -58,7 +74,7 @@ function TreatmentsDropdown() {
         aria-haspopup="true"
         aria-controls="dropdown-content"
       >
-        Treatments
+       All Treatments
       </button>
       {isOpen && (
         <div

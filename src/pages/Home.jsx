@@ -2,35 +2,12 @@ import React, { useRef, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaPhoneAlt, FaStar } from "react-icons/fa";
 import { assets } from "../assets/assets";
-import { useAppContext } from "../context/AppContext";
 import treatmentCategories from "../components/Treatment Card/treatmentCategories";
 import "./home.css";
 
 function Home() {
   const navigate = useNavigate();
-  const { auth } = useAppContext(); // Access auth context
   const videoRef = useRef(null);
-
-  // Fetch the video only for logged-in users
- /* useEffect(() => {
-    if (auth.token) {
-      fetch("/video", {
-        headers: {
-          Authorization: `Bearer ${auth.token}`,
-        },
-      })
-        .then((response) => {
-          if (!response.ok) throw new Error("Failed to load video");
-          return response.blob();
-        })
-        .then((blob) => {
-          const videoUrl = URL.createObjectURL(blob);
-          videoRef.current.src = videoUrl;
-        })
-        .catch((error) => console.error(error));
-    }
-  }, [auth.token]);*/
-
   const [reviews] = useState([]);
 
   return (
@@ -60,7 +37,7 @@ function Home() {
               <div
                 key={category.id}
                 className="category-card"
-                onClick={() => navigate(category.path)}
+                onClick={() => navigate("/treatments")}
                 role="button"
                 tabIndex="0"
                 onKeyDown={(e) => e.key === "Enter" && navigate(category.path)}

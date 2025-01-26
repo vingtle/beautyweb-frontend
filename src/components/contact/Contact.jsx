@@ -29,7 +29,7 @@ function Contact() {
       </button>
       {isOpen && (
         <div className={`dropdown-content ${isOpen ? "open" : ""}`}>
-          <h2>We`&apos;`d love to hear from you!</h2>
+          <h2>We would love to hear from you!</h2>
           <p>Send us a message directly through Google Business.</p>
           <a
             href="https://business.google.com"

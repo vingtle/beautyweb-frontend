@@ -7,6 +7,8 @@ import Waxpage from "../assets/waxpage.jpg";
 import Ads from "../assets/ads.mp4";
 import dropdown_icon from "../assets/dropdown.png";
 import profile_pic from "../assets/Avatar.jpg";
+import treatmentpage from "../assets/treatmentpage.jpg";
+
 
 export const assets = {
      BGColorful,
@@ -17,7 +19,5 @@ export const assets = {
      Waxpage,
      Ads,
      dropdown_icon,
-     profile_pic
+     profile_pic,treatmentpage,
 }
-
-

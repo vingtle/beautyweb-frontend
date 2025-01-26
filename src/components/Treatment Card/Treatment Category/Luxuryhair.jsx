@@ -64,12 +64,6 @@ function LuxuryHair() {
       className="luxury-hair-treatments"
       style={{
         backgroundImage: `url(${Haircare})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "repeat",
-        minHeight: "100vh",
-        padding: "50px",
-        color: "#fff",
       }}
     >
       <h1 className="luxury-hair-treatments-title">Luxury Hair Treatments</h1>

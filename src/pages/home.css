@@ -182,7 +182,7 @@
   
     .salon-details {
       flex-direction: column;
-      text-align: center;
+      text-align: start;
     }
   
     .review-container {
@@ -219,7 +219,7 @@
     }
   
     .category-card {
-      width: 100%;
+      width: 85%;
       /* Full width cards on very small screens */
     }
   }

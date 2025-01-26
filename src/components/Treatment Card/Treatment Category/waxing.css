@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+.waxing-container {
+  background-size: cover;
+  background-position: center;
+  background-repeat: auto;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/* Title styling */
+.waxing-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 60px;
+  color: black;
+  text-align: start;
+  animation: color-change 3s infinite alternate ease-in-out;
+}
+
+.waxing-card h3 {
+  color: black;
+}
+/* Grid container for waxing options */
+.waxing-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+  gap: 20px;
+  justify-items: center;
+  align-items: start;
+}
+
+/* Individual card styling */
+.waxing-card {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 300px; /* Restrict maximum card width */
+  
+}
+
+.waxing-card h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #04425d;
+  margin-bottom: 10px;
+}
+
+.waxing-card p {
+  font-size: 1rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+.waxing-card .price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0;
+}
+
+.waxing-card .info-btn,
+.waxing-card .book-btn {
+  display: block;
+  align-items: center;
+  width: 50%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 0;
+  color: #fff;
+  background-color: #085162;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 60px;
+}
+
+.waxing-card .info-btn:hover,
+.waxing-card .book-btn:hover {
+  background-color: #032d43;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 1060px) {
+  .waxing-container {
+  background-size: cover;
+  background-position: center;
+  background-repeat: auto;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  padding: 20px;
+  }
+  .waxing-options {
+    grid-template-columns: repeat(3
+    , 1fr); 
+  }
+  .waxing-card {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .waxing-container {
+    padding: 20px;
+  }
+  .waxing-options {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .waxing-card {
+    padding: 1px;
+    margin-top: 20px;
+  }
+  .waxing-card .book-btn {
+   padding: 5px;
+    
+  }
+}

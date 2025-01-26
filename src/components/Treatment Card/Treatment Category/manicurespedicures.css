@@ -1,7 +1,12 @@
 .nails-treatments {
-    font-family: "Lato", sans-serif;
-    padding: 50px;
-    color: #fff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: auto;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  padding: 20px;
   }
   
   .nails-treatments-title {
@@ -14,19 +19,20 @@
   
   .treatment-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 100px;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+    gap: 20px;
+    justify-items: center;
+    align-items: start;
   }
   
   .treatment-card {
     background: rgba(255, 255, 255, 0.8);
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition:
-      transform 0.3s ease,
-      box-shadow 0.3s ease;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 300px; /* Restrict maximum card width */
   }
   
   .treatment-card:hover {
@@ -98,6 +104,9 @@
   
   /* Mobile (up to 600px) */
   @media screen and (max-width: 600px) {
+   .nails-treatments {
+    padding: 10px;
+   }
     .nails-treatments-title {
       font-size: 1.5em;
       margin-bottom: 15px;
@@ -109,7 +118,9 @@
     }
   
     .treatment-card {
-      padding: 8px;
+      padding: 1px;
+      margin-top: 20px;
+      align-items: center;
     }
   
     .treatment-card h3 {

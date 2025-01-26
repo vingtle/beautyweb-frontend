@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import React, { useState, useEffect } from "react";
-import Treatments from "../../pages/Treatments";
 import { FaBars } from "react-icons/fa";
 import SearchInput from "./SearchInput";
 import Contact from "../contact/Contact";
@@ -12,7 +11,6 @@ function Navbar() {
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const isLoggedIn = Boolean(localStorage.getItem("token"));
-  const [showMenu,setShowMenu] = useState(false);
   const [token, setToken] = useState(() => localStorage.getItem('token'));
 
   const toggleMenu = () => {
@@ -73,9 +71,10 @@ function Navbar() {
         <div onClick={() => navigate("/")} className="nav-btn">
           Home
         </div>
-        <div onClick={() => navigate("/treatments")} className="nav-btn">
-          <Treatments />
+        <div className="nav-btn" onClick={() => navigate("/treatments")}>
+          Treatments
         </div>
+
         <div className="nav-btn">
           <Contact />
         </div>

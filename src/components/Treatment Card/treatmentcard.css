@@ -25,6 +25,11 @@
     color: #555;
   }
   
+  .treatment-card span {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
   /* Responsive Styles */
   
   /* For screen widths less than or equal to 1060px */

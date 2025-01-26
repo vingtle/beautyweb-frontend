@@ -1,10 +1,15 @@
-.eyelash {
-    font-family: "Lato", sans-serif;
-    padding: 50px;
-    color: #fff;
+.luxury-hair-treatments {
+  background-size: cover;
+  background-position: center;
+  background-repeat: auto;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  padding: 20px;
   }
   
-  .eyelash-title {
+  .luxury-hair-treatments-title {
     text-align: start;
     margin-bottom: 50px;
     margin-top: 50px;
@@ -14,8 +19,10 @@
   
   .treatment-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 100px;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+    gap: 20px;
+    justify-items: center;
+    align-items: start;
   }
   
   .treatment-card {
@@ -36,18 +43,14 @@
   
   .treatment-card h3 {
     color: #0b4553;
-    font-size: 1.2em;
+    font-weight: bold;
     margin-bottom: 10px;
   }
   
   .treatment-card p {
     margin: 5px 0;
-    font-size: 0.9em;
+    font-size: 1em;
     color: #1d1c1c;
-  }
-  
-  .treatment-card p.price {
-    font-size: 0.9em;
   }
   
   .book-btn {
@@ -61,10 +64,6 @@
     font-size: 1em;
     width: 50%;
     transition: background-color 0.3s ease;
-  }
-  
-  .book-btn:hover {
-    background-color: #065f73;
   }
   
   .info-btn {
@@ -85,9 +84,61 @@
     background-color: #065f73;
   }
   
+  /* Modal overlay */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+  }
+  
+  .modal-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #012831;
+  }
+  
+  .modal-content p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #333;
+  }
+  
+  .modal-content .close-btn {
+    background-color: #e53e3e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .modal-content .close-btn:hover {
+    background-color: #c53030;
+  }
+  
+  /* Responsive Design */
+  
   /* Tablet (up to 1060px) */
   @media screen and (max-width: 1060px) {
-    .eyelash-title {
+    .luxury-hair-treatments-title {
       font-size: 1.8em;
       margin-bottom: 20px;
     }
@@ -104,24 +155,23 @@
       font-size: 1em;
     }
   
-    .treatment-card p {
-      font-size: 0.8em;
+    .info-btn {
+      font-size: 0.75em;
+      padding: 8px;
     }
   
     .book-btn {
       font-size: 0.9em;
       padding: 8px;
     }
-  
-    .info-btn {
-      font-size: 0.75em;
-      padding: 8px;
-    }
   }
   
   /* Mobile (up to 600px) */
   @media screen and (max-width: 600px) {
-    .eyelash-title {
+    .luxury-hair-treatments {
+      padding: 10px;
+    }
+    .luxury-hair-treatments-title {
       font-size: 1.5em;
       margin-bottom: 15px;
     }
@@ -132,11 +182,18 @@
     }
   
     .treatment-card {
-      padding: 8px;
+      padding: 1px;
+      margin-top: 20px;
+      align-items: center;
     }
   
     .treatment-card h3 {
       font-size: 1em;
+    }
+  
+    .info-btn {
+      font-size: 0.7em;
+      padding: 6px;
     }
   
     .book-btn {
@@ -144,13 +201,18 @@
       padding: 6px;
     }
   
+    .modal-content {
+      width: 95%;
+      padding: 15px;
+    }
+  
     .treatment-card p {
       font-size: 0.8em;
     }
   
-    .info-btn {
-      font-size: 0.7em;
-      padding: 6px;
+    .modal-content .close-btn {
+      font-size: 0.8em;
+      padding: 5px;
     }
   }
   

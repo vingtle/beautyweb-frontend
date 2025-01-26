@@ -66,12 +66,6 @@ function Eyelash() {
       className="eyelash"
       style={{
         backgroundImage: `url(${Haircare})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "repeat",
-        minHeight: "100vh",
-        padding: "50px",
-        color: "#fff",
       }}
     >
       <h1 className="eyelash-title">Eye Lash Extensions & Lift</h1>

@@ -75,12 +75,6 @@ function Massages() {
       className="massage-treatments"
       style={{
         backgroundImage: `url(${Photo})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "repeat",
-        minHeight: "100vh",
-        padding: "50px",
-        color: "#fff",
       }}
     >
       <h1 className="massage-treatments-title">Massage</h1>

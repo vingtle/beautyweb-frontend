@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 
 #treatments-dropdown {
-  position: relative;
-  display: inline-block;
+  position: absolute;
+  display: block;
+  min-width: 200px; /* Ensure it has enough width */
   font-family: "Lato", sans-serif;
 }
 
@@ -11,9 +12,8 @@ button:hover {
   color: #0891b2;
 }
 
-.dropdown-title {
+.treatments-dropdown-title {
   cursor: pointer;
-  color: #000;
   font-weight: 500;
   background: none;
   border: none;
@@ -24,7 +24,8 @@ button:hover {
   display: block;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 200px;
+  min-width: 400px;
+  align-content: center;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 5px;
@@ -38,7 +39,8 @@ button:hover {
 }
 
 .dropdown-content.open {
-  max-height: 300px;
+  max-height: 400px;
+  margin-left: 41%;
   opacity: 1;
 }
 
@@ -66,6 +68,11 @@ button:hover {
   outline: 2px solid #ff7f50;
   background-color: #ffe4c4;
 }
+@media screen and (max-width: 1060px) {
+  .treatments-card {
+    max-height: fit-content;
+  }
+}
 
 @media (max-width: 600px) {
   #treatments-dropdown {
@@ -76,8 +83,34 @@ button:hover {
     font-size: 1.2em;
     text-align: center;
     padding: 12px;
+    animation: textGlow 3s infinite, multiColor 6s infinite;
   }
-
+  @keyframes textGlow {
+    0% {
+      text-shadow: 
+        0 0 5px #e930ec,
+        0 0 10px #e930ec,
+        0 0 20px #e930ec,
+        0 0 40px #e930ec,
+        0 0 80px #e930ec;
+    }
+    50% {
+      text-shadow: 
+        0 0 5px #00ff00,
+        0 0 10px #00ff00,
+        0 0 20px #00ff00,
+        0 0 40px #00ff00,
+        0 0 80px #00ff00;
+    }
+    100% {
+      text-shadow: 
+        0 0 5px #0000ff,
+        0 0 10px #0000ff,
+        0 0 20px #0000ff,
+        0 0 40px #0000ff,
+        0 0 80px #0000ff;
+    }
+  }
   .dropdown-content {
     min-width: 100%;
     left: 0;

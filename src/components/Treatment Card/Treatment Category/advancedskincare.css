@@ -4,11 +4,12 @@
   color: #fff;
   text-align: center;
   font-family: "Lato", sans-serif;
+  padding: 10px;
 }
 
 .advanced-skin-care h1 {
   color: black;
-  margin-top: 80px;
+  margin-top: 60px;
   text-align: start;
   animation: color-change 3s infinite alternate ease-in-out;
 }
@@ -25,9 +26,10 @@
 
 .treatment-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 60px;
-  margin-top: 80px;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+  gap: 20px;
+  justify-items: center;
+  align-items: start;
 }
 
 .treatment-card {
@@ -163,11 +165,14 @@
 /* Mobile View */
 @media screen and (max-width: 600px) {
   .advanced-skin-care {
-    padding: 20px 10px;
+    padding: 0;
   }
-
+  .advanced-skin-care h1 {
+    margin-bottom: 20px;
+  }
   .treatment-grid {
     grid-template-columns: 1fr;
+    margin-top: 0;
   }
 
   .treatment-card {
