@@ -1,0 +1,199 @@
+/* General Styles */
+.booking-slot-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Lato", sans-serif;
+}
+
+.booking-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.selected-slot {
+  background: hsl(211, 67%, 89%);
+  padding: 15px;
+  border: 1px solid #ddd;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.selected-slot h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.selected-slot p {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #666;
+}
+
+.confirm-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #0f4c8d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.confirm-btn:hover {
+  background-color: #5085be;
+}
+
+.fc-toolbar {
+  background-color: #f8f9fa;
+  padding: 10px;
+}
+
+.fc-toolbar-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.fc-daygrid-day-number {
+  font-weight: bold;
+  color: #343a40;
+}
+
+.fc-timegrid-slot {
+  border: 1px solid #dee2e6;
+  height: 70px; /* Increased row height */
+}
+
+.fc-timegrid-axis {
+  height: 60px; /* Matches the row height */
+}
+
+.fc-timegrid-slot-label {
+  color: #060506;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.fc-event {
+  background-color: #e7eff6;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 80px; /* Center align text vertically */
+}
+
+.fc-event:hover {
+  opacity: 0.9;
+}
+
+.fc-highlight {
+  background-color: #0838532c;
+}
+
+.full-calendar {
+  margin: 10px 0;
+}
+
+.fc-timegrid-axis-cushion {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.fc-timegrid-slots .fc-timegrid-slot-lane {
+  border-right: 3px solid #dee2e6;
+}
+
+.fc-timegrid-slots {
+  background-color: #f8f9fa;
+  height: 80px;
+}
+
+.fc-timegrid-now-indicator {
+  background-color: #056da9;
+}
+
+.fc-scrollgrid {
+  border: 1px solid #dee2e6;
+}
+
+.fc-v-event .fc-event-main {
+  color: black;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 1060px) {
+  .booking-slot-container {
+    padding: 15px;
+  }
+
+  .booking-title {
+    font-size: 24px;
+  }
+
+  .selected-slot h2 {
+    font-size: 18px;
+  }
+
+  .selected-slot p {
+    font-size: 14px;
+  }
+
+  .confirm-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .fc-timegrid-slot {
+    height: 60px; /* Adjust for smaller screens */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .booking-slot-container {
+    padding: 10px;
+  }
+
+  .booking-title {
+    font-size: 20px;
+  }
+
+  .selected-slot {
+    padding: 10px;
+  }
+
+  .selected-slot h2 {
+    font-size: 16px;
+  }
+
+  .selected-slot p {
+    font-size: 12px;
+  }
+
+  .confirm-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .fc-toolbar-title {
+    font-size: 1rem;
+  }
+
+  .fc-timegrid-slot {
+    height: 50px; /* Adjust further for very small screens */
+  }
+
+  .fc-timegrid-axis-cushion {
+    font-size: 12px;
+  }
+}

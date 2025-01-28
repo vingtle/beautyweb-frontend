@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { useNavigate, useParams } from "react-router-dom";
 import "./waxmodal.css";
-import waxTreatments from "./dataWax";
 
 const WaxModal = ({ subcategory, title, onClose }) => {
   const [treatments, setTreatments] = useState([]);
