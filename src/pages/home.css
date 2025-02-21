@@ -10,7 +10,8 @@
   
   .hero-section {
     text-align: center;
-    padding: 50px 20px;
+    padding-top: 50px;
+    padding-right: 30px;
   }
   
   .hero-text h1 {
@@ -22,14 +23,16 @@
   }
   
   .hero-section video {
-    width: 100%;
+    width: 90%;
     height: auto;
     border-radius: 10px;
     box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .treatment-categories {
-    padding: 20px 20px;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 30px;
     text-align: center;
   }
   
@@ -47,11 +50,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* Distribute space around items */
     align-items: center;
-    /* Center items vertically */
     margin: 20px 0px;
-    /* Add some vertical margin for separation */
     gap: 20px;
   }
   
@@ -71,7 +71,7 @@
     box-shadow: 4px 8px 16px rgba(1, 1, 1, 0.2);
   }
   
-  /* About Salon */
+
   .about-salon {
     margin: 20px;
   }
@@ -170,14 +170,15 @@
     .hero-text h1 {
       font-size: 2em;
     }
-  
+    .treatment-categories {
+      padding-left: 20px;
+    }
     .treatment-categories .block-category {
-      flex-direction: column;
-      /* Stack items vertically on smaller screens */
+      flex-direction: grid;
     }
   
     .category-container {
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr 1fr));
     }
   
     .salon-details {
@@ -220,6 +221,5 @@
   
     .category-card {
       width: 85%;
-      /* Full width cards on very small screens */
     }
   }

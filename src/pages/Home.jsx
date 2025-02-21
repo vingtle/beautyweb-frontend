@@ -21,7 +21,7 @@ function Home() {
             loop
             muted
           >
-            <source src={assets.Ads} />
+            <source src="/ads.mp4"/>
           </video>
           <div className="hero-placeholder">
           </div>

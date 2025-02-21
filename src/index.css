@@ -11,4 +11,5 @@
 
 ::-webkit-scrollbar{
     @apply hidden
+    scroll-behavior: smooth;
 }

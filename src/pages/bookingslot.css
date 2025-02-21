@@ -5,7 +5,7 @@
   margin: 0 auto;
   background-color: #f8f9fa;
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-family: "Lato", sans-serif;
 }
 
@@ -75,7 +75,7 @@
 }
 
 .fc-timegrid-axis {
-  height: 60px; /* Matches the row height */
+  height: 160px; /* Matches the row height */
 }
 
 .fc-timegrid-slot-label {

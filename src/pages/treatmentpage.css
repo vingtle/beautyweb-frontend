@@ -1,0 +1,122 @@
+.treatment-container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: #f8f8f8;
+    min-height: 100vh;
+  }
+  
+  .treatment-category {
+    width: 80%;
+    max-width: 1060px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .treatment-category h2 {
+    color: #333;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .subcategories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .subcategory-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .subcategory-card h3 {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .subcategory-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+  }
+
+  .subcategory-card span {
+    font-size: 15px;
+    color: black;
+  }
+  
+  .description {
+    font-style: italic;
+    color: #777;
+  }
+  
+  .services {
+    margin-top: 10px;
+  }
+  
+  .service-card {
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+  
+  .service-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .book-btn {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #30d1dc;
+    color: white;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 1060px) {
+    .treatment-category {
+      width: 89%;
+    }
+    .treatment-category h2 {
+        margin-top: 40px;
+    }
+    .subcategory-card {
+      width: 250px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .treatment-category {
+      padding: 15px;
+    }
+    .subcategories {
+      flex-direction: column;
+      align-items: center;
+    }
+    .subcategory-card {
+      width: 90%;
+    }
+  }
+  

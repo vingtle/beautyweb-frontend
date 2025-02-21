@@ -1,0 +1,166 @@
+.profile-container {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+/* Image Upload */
+.image-upload {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.profile-img {
+    width: 120px;
+    border-radius: 50%;
+    opacity: 0.75;
+}
+
+.upload-icon {
+    width: 30px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.name {
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #262626;
+}
+
+.name-input {
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+
+.divider {
+    background: #ADADAD;
+    border: none;
+}
+
+
+.section-title {
+    color: gray;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 5px;
+    align-items: center;
+    padding-bottom: 0;
+}
+
+.label {
+    font-weight: bold;
+    padding-bottom: 0;
+}
+
+.email {
+    color: rgb(36, 100, 128);
+    padding-bottom: 0;
+}
+
+.address, .text {
+    color: gray;
+    padding-bottom: 0;
+}
+
+.input, .dropdown {
+    padding: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.button-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.save-button, .edit-button {
+    padding: 10px 20px;
+    border: 1px solid #2ea3bd;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.save-button:hover, .edit-button:hover {
+    background-color: #5bd2df;
+    color: black;
+}
+
+/* ---------------- RESPONSIVE DESIGN ---------------- */
+
+/* For screens smaller than 1060px */
+@media (max-width: 1060px) {
+    .profile-container {
+        max-width: 90%;
+        padding: 15px;
+    }
+    
+    .profile-img {
+        width: 100px;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .input, .dropdown {
+        width: 100%;
+    }
+}
+
+/* For screens smaller than 600px (Mobile View) */
+@media (max-width: 600px) {
+    .profile-container {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 90px;
+        margin: auto;
+    }
+
+    .image-upload {
+        text-align: center;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .label {
+        font-weight: normal;
+    }
+
+    .input, .dropdown {
+        width: 100%;
+    }
+
+    .button-container {
+        text-align: center;
+    }
+}
